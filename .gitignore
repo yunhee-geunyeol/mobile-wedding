@@ -1,0 +1,13 @@
+# 운영체제 관련 파일
+.DS_Store
+Thumbs.db
+
+# 환경설정 파일
+.env
+*.local
+
+# IDE 관련 파일
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
