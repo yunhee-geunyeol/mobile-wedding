@@ -1,3 +1,3 @@
 $(document).ready(function() {
-  console.log("DOM이 준비됨!");
+  console.log("DOM is ready!");
 });
