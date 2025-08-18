@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(to bottom, #ffffff, #ffe5d1);
+}
+header {
+  height: 100vh;
+  background: url('https://picsum.photos/600/900?blur') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+}
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+header p {
+  margin: 10px 0 0;
+  font-size: 1.2rem;
+}
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+.date {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #b48a78;
+}
+.location {
+  margin-top: 5px;
+  font-size: 1.1rem;
+}
+footer {
+  background: #f4eee8;
+  padding: 30px 20px;
+  font-size: 0.9rem;
+  text-align: center;
+}
