@@ -2,6 +2,7 @@ body {
   margin: 0;
   height: 100vh;
   background: linear-gradient(to bottom, #ffffff, #ffe5d1);
+  color: #333; /* 전체 글자 색 진하게 */
 }
 header {
   height: 100vh;
@@ -43,4 +44,16 @@ footer {
   padding: 30px 20px;
   font-size: 0.9rem;
   text-align: center;
+}
+
+.photo {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.photo img {
+  width: 90%;
+  max-width: 500px; /* 큰 화면에서도 너무 커지지 않도록 */
+  border-radius: 15px; /* 모서리 둥글게 */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* 은은한 그림자 */
 }
