@@ -107,3 +107,22 @@ footer {
 .account-card button:hover {
   background: #8e4545;
 }
+
+.map {
+  text-align: center;
+  margin: 3rem 1rem;
+}
+
+.map h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+  color: #b05a5a; /* 포인트 컬러 */
+}
+
+.map img {
+  width: 100%;         /* 화면 너비 꽉 차게 */
+  max-width: 900px;    /* 큰 화면에서도 넉넉하게 */
+  border-radius: 1rem;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2); /* 그림자 살짝 강하게 */
+  border: 1px solid #f0e0d6;
+}
