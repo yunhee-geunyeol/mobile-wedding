@@ -4,24 +4,93 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>모바일 청첩장</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 <body>
-  <header>
-    <h1>우리의 결혼식에 초대합니다</h1>
-  </header>
+  <section name="main" class="main">
+    <div name="main-div" class="main-div">
+      <div name="image-top" class="image-top">
+        <p class="p1">
+          두 사람의<br>
+          결혼식
+        </p>        
+        <p class="p2">
+          <span class="span1 groom">김근열</span>
+          <span class="span1 bride">정윤희</span>
+        </p>
+      </div>
+      <div name="main-image">
+        <img src="assets/img/together_formal_suit1.jpg" alt="메인 사진">
+      </div>
+      <div name="image-bottom" class="image-bottom">
+        <p class="p3">
+          2026. 01. 10 SAT PM 1:20<br>
+          메리빌리아 웨딩홀 2층 프리모소르 홀
+        </p>
+      </div>
+    </div>
+  </section>
 
-  <main>
-    <section class="intro">
-      <p>신랑 신부와 함께하는 특별한 날</p>
-    </section>
-  </main>
+  <section>
+    <h1>윤희 ❤️ 근열</h1>
+    <p>우리의 결혼식에 초대합니다</p>
+  </section>
+
+  <section>
+    <h2>초대의 글1</h2>
+    <p>
+      서로의 인연이 되어<br>
+      하나가 되는 날,<br>
+      소중한 분들을 모시고<br>
+      축복을 받고자 합니다.
+    </p>
+  </section>
+
+  <section>
+    <h2>초대의 글2</h2>
+    <p>
+      만난 지 여덟 번 만에, 우리는 알았습니다.<br>
+      서로가 평생의 반쪽이라는 것을.<br>
+      그 시작에 함께해 주시길 부탁드립니다.<br>
+    </p>
+  </section>
+
+  <section>
+    <h2>예식 안내</h2>
+    <p class="date">2026년 1월 10일 (토) 오후 1시 20분</p>
+    <p class="location">인천 송도 메리빌리아 웨딩홀 2층 프리모소르 홀</p>
+  </section>  
+
+  <section class="map">
+    <h2>오시는 길</h2>
+    <img src="../assets/svg/map.svg" alt="웨딩홀 지도">
+  </section>  
+
+  <section class="account">
+    <h2>마음 전하실 곳</h2>
+    <p class="desc">축하의 마음을 전해주실 분들을 위해 계좌번호를 안내드립니다.</p>
+
+    <div class="account-card">
+      <h3>신랑측</h3>
+      <p><strong>김 근열</strong></p>
+      <p class="bank">기업은행 123-456-78-901234</p>
+      <button onclick="copyAccount('123-456-78-901234')">계좌번호 복사</button>
+    </div>
+
+    <div class="account-card">
+      <h3>신부측</h3>
+      <p><strong>정 윤희</strong></p>
+      <p class="bank">신한은행 987-654-32-109876</p>
+      <button onclick="copyAccount('987-654-32-109876')">계좌번호 복사</button>
+    </div>
+  </section>
 
   <footer>
-    <p>© 2025 Mobile Wedding Invitation</p>
+    © 2025 YunHee & GeunYeol Wedding Invitation
   </footer>
 
-  <script src="js/script.js"></script>
+  <script src="js/index.js"></script>
 </body>
 </html>
