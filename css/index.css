@@ -5,22 +5,28 @@
     margin: 0 auto;
   }
 
+  section {
+    margin-bottom: 10rem;
+  }
+
+  /* 메인 START */
   .image-top {
     z-index: 10;
     position: absolute;  
     left: 50%;
-    top: 3.5rem;
+    top: 44rem;
     transform: translateX(-50%);
-    background: rgba(249, 250, 250, 0.363);
-    padding: 1.8rem 1.3rem;
+    background: rgba(249, 250, 250, 0.689);
+    padding: 0.5rem 0.7rem;
     border-radius: 10px;
     text-align: center;
   }
 
   .image-top .p1 {
     font-family: 'Playfair Display', serif;
-    font-size: 1.8rem;        
-    font-weight: 300;        
+    /* font-size: 1.8rem; */
+    font-size: 1.5rem;
+    font-weight: 340;        
     letter-spacing: 1px;      
     margin-bottom: 0.8rem;
     color: #333;
@@ -28,16 +34,16 @@
 
   .image-top .p2 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 2rem;          
+    font-size: 1.8rem;
     font-weight: 430;
     line-height: 1.4;
     color: #222;
   }  
 
   .image-bottom {
-    height: 63.5em;
+    height: 63em;
     position: absolute;
-    top: 2%;               
+    top: 1.7%;               
     left: 50%;
     transform: translateX(-50%);
     width: 85%;
@@ -57,27 +63,143 @@
     font-size: 1.7rem;
     color: #444;
     font-family: 'Noto Sans KR', sans-serif;
-  }  
+  }
+  /* 메인 END */
+
+  /* 캘린더 START */
+  .calendar-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 600px;
+    margin: auto;
+    padding: 0.6em 1em;
+    border-bottom: none;
+    font-weight: bold;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  .calendar-left .span2.number  {
+    font-size: 2em;
+    color: #d48f4e;
+  }
+
+  .calendar-left .span2.text {
+    font-size: 1.5em;
+    color: #d48f4e;
+  }
+
+  .calendar-right {
+    font-weight: lighter;
+    font-size: 1.5em;
+    color: #222;
+  }
+
+  .calendar-body {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    max-width: 100%;
+    margin: 20px auto;
+    gap: 4px;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+
+  .calendar-body .sun { color: #d04848; }
+  .calendar-body .sat { color: #3b7bd3; }
+
+  .calendar-body .day-name {
+    font-weight: bold;
+    text-align: center;
+    padding: 1em;
+    background: white;
+    font-size: 1rem;
+  }
+
+  .calendar-body .day {       
+    display: flex;               
+    justify-content: center;     
+    align-items: center;        
+    align-items: center;        
+    font-size: 1.5rem;
+    width: 40%;                
+    height: 50%;
+    margin: 1.2em;
+    box-sizing: border-box;
+    position: relative; 
+  }
+
+  .calendar-body .day.newYear { 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d04848; 
+  }
+
+  .calendar-body .day.newYear .number {
+    font-size: 1.5rem;  
+    margin: 0;
+    z-index: 1;
+  }
+
+  .calendar-body .day.newYear .text {
+    position: absolute;
+    top: 100%;
+    font-size: 0.9rem;  
+    margin: 0;
+    margin-top: 0.2em;  
+    text-align: center;  
+  }
+
+  .calendar-body .day.highlight {
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;        
+    background-color: #d48f4e;
+    color: white;
+    font-weight: bold;
+    display: flex;           
+    justify-content: center;  
+    align-items: center;   
+    top: -0.5rem;  
+    left: -0.9rem;
+  }
+
+  .calendar-body .day.highlight span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #d48f4e;
+    color: white;
+  }
+  /* 캘린더 END */
 }
 
 /* 모바일 환경 세로 모드 */
 @media (max-width: 720px) {
+  section {
+    margin-bottom: 8rem;
+  }
+
+  /* 메인 START */
   .image-top {
     z-index: 10;
     position: absolute;  
     left: 50%;
-    top: 2rem;
+    top: 22.2rem;
     transform: translateX(-50%);
-    background: rgba(249, 250, 250, 0.363);
-    padding: 0.5rem 0.3rem;
+    background: rgba(249, 250, 250, 0.689);
+    padding: 0.2rem 0.3rem;
     border-radius: 5px;
     text-align: center;
   }
 
   .image-top .p1 {
     font-family: 'Playfair Display', serif;
-    font-size: 0.8rem;        
-    font-weight: 300;        
+    font-size: 0.7rem;        
+    font-weight: 370;        
     letter-spacing: 1px;      
     margin-bottom: 0.8rem;
     color: #333;
@@ -85,14 +207,14 @@
 
   .image-top .p2 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1rem;          
+    font-size: 0.9rem;          
     font-weight: 430;
     line-height: 1.4;
     color: #222;
   }  
 
   .image-bottom {
-    height: 33em;
+    height: 32.2em;
     position: absolute;
     top: 2%;               
     left: 50%;
@@ -114,20 +236,127 @@
     font-size: 0.85rem;
     color: #444;
     font-family: 'Noto Sans KR', sans-serif;
-  }  
+  }
+  /* 메인 END */
+
+  /* 캘린더 START */
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0.65rem;
+    border-bottom: none;
+    font-weight: bold;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  .calendar-left .span2.number  {
+    font-size: 1.3em;
+    color: #d48f4e;
+  }
+
+  .calendar-left .span2.text {
+    font-size: 0.9em;
+    color: #d48f4e;
+  }
+
+  .calendar-right {
+    font-weight: lighter;
+    font-size: 0.8em;
+    color: #222;
+  }
+
+  .calendar-body {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    font-family: 'Noto Sans KR', sans-serif;
+    gap: 1rem;
+  }
+
+  .calendar-body .sun { color: #d04848; }
+  .calendar-body .sat { color: #3b7bd3; }
+
+  .calendar-body .day-name {
+    font-weight: bold;
+    text-align: center;
+    padding: 0.2em;
+    background: white;
+    font-size: 0.7rem;
+  }
+
+  .calendar-body .day {       
+    display: flex;               
+    justify-content: center;     
+    align-items: center;        
+    align-items: center;        
+    font-size: 0.9rem;
+    width: 100%;                
+    height: 100%;
+    margin: 0.3em 0.3em 0.3em 0em;
+    box-sizing: border-box;
+    position: relative; 
+  }
+
+  .calendar-body .day.newYear { 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d04848; 
+  }
+
+  .calendar-body .day.newYear .number {
+    font-size: 0.9rem;  
+    margin: 0;
+    z-index: 1;
+  }
+
+  .calendar-body .day.newYear .text {
+    position: absolute;
+    top: 70%;
+    font-size: 0.6rem;  
+    margin: 0;
+    margin-top: 0.2em;  
+    text-align: center;  
+  }
+
+  .calendar-body .day.highlight {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;        
+    background-color: #d48f4e;
+    color: white;
+    font-weight: bold;
+    display: flex;           
+    justify-content: center;  
+    align-items: center;   
+  }
+
+  .calendar-body .day.highlight span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #d48f4e;
+    color: white;
+  }
+  /* 캘린더 END */  
 }
 
 /* 모바일 환경 가로 모드 */
 @media only screen and (orientation: landscape) {
-  [name="main"] {
-    height: auto !important;
-    position: relative; 
-    max-width: 720px;
-    margin: 0 auto;
-    text-align: center;
-  }
 }
 
+/* 바르우저 & 모바일 환경 공통 */
+section {
+  text-align: center;
+}
+
+/* 메인 START */
 .main-div {
   position: relative; 
 }
@@ -165,6 +394,8 @@
   display: block;
   border-radius: 8px;
 }
+/* 메인 END */
+
 
 
 
@@ -238,16 +469,6 @@
   border-radius: 1rem;
   box-shadow: 0 6px 16px rgba(0,0,0,0.2); /* 그림자 살짝 강하게 */
   border: 1px solid #f0e0d6;
-}
-
-section {
-  padding: 50px 20px;
-  text-align: center;
-}
-
-section h2 {
-  font-size: 1.8rem;
-  margin-bottom: 15px;
 }
 
 .date {
