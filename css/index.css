@@ -286,7 +286,7 @@
     z-index: 10;
     position: absolute;  
     left: 50%;
-    top: 25.5rem;
+    top: 76.5%;
     transform: translateX(-50%);
     background: rgba(249, 250, 250, 0.689);
     padding: 0.2rem 0.3rem;
@@ -312,7 +312,7 @@
   }  
 
   .image-bottom {
-    height: 35.5em;
+    height: 111%;
     position: absolute;
     top: 2%;               
     left: 50%;
@@ -442,9 +442,9 @@
 
   .calendar-body .day.highlight {
     width: 100%;
-    height: 120%;
+    height: 110%;
     top: -10%;
-    border-radius: 50%;        
+    border-radius: 60%;        
     background-color: #d48f4e;
     color: white;
     font-weight: bold;
