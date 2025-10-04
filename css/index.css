@@ -316,6 +316,7 @@
 
   .map-bottom .title {
     font-weight: bold;
+    margin-left: 0.4em;
     margin-bottom: 0.5em;
     font-size: 1.15em;
   }
@@ -326,7 +327,7 @@
   }
 
   .map-bottom .contents-sub {
-    margin-left: 0.85em;
+    margin-left: 1em;
     color: #777;
     font-size: 1em;
   }
@@ -337,7 +338,7 @@
 
   .p8 .contents {
     float: left;
-    width: 55%;
+    width: 54%;
     box-sizing: border-box;
   }
 
@@ -671,6 +672,7 @@
 
   .map-bottom .title {
     font-weight: bold;
+    margin-left: 0.2em;
     margin-bottom: 0.7em;
     font-size: 0.9em;
   }
