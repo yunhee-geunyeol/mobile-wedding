@@ -682,7 +682,7 @@
 
   .map-bottom .contents-sub {
     margin-left: 0.7em;
-    color: #666;
+    color: #777;
     font-size: 0.72em;
   }
 
@@ -693,7 +693,7 @@
 
   .p8 .contents {
     float: left;
-    width: 80%;
+    width: 83%;
     box-sizing: border-box;
     display: block; 
   }
