@@ -89,7 +89,6 @@ $(document).ready(function() {
 
 function fn_copyAccount(account) {
   navigator.clipboard.writeText(account).then(() => {
-    alert("계좌번호가 복사되었습니다: " + account);
   });
 }
 
