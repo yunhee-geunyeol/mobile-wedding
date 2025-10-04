@@ -527,7 +527,7 @@
   .calendar-body .day.highlight {
     width: 100%;
     height: 110%;
-    top: -7%;
+    top: -3%;
     border-radius: 50%;        
     background-color: #d48f4e;
     color: white;
@@ -693,7 +693,7 @@
 
   .p8 .contents {
     float: left;
-    width: 66%;
+    width: 70%;
     box-sizing: border-box;
     display: block; 
   }
