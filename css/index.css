@@ -273,6 +273,64 @@
     background: rgba(255,255,255,0.2);
   }
   /* 갤러리 END */  
+
+  /* 오시는 길 START */
+  .map-header {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  .map-header .p6 {
+    display: block;
+    margin: 1em;
+    font-size: 1.15em;
+    color: #666
+  }
+
+  .map-header .p7 {
+    display: block;
+    margin: 0em 1.5em 1.5em 1.5em; 
+    font-size: 2em;
+    color: #333
+  } 
+
+  .map-body {
+    gap: 0.5rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .map-bottom {
+    text-align: left;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  .map-bottom p {
+    margin-bottom: 1.3em;
+  }
+
+  .map-bottom .span4 {
+    display: block;
+    margin-top: 0.5em;
+  }
+
+  .map-bottom .title {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    font-size: 1.15em;
+  }
+
+  .map-bottom .contents {
+    margin-left: 1em;
+    font-size: 1em;
+  }
+
+  .map-bottom .contents-sub {
+    margin-left: 0.85em;
+    color: #777;
+    font-size: 1em;
+  }
+  /* 오시는 길 END */
 }
 
 /* 모바일 환경 세로 모드 */
@@ -543,7 +601,65 @@
   .prev:hover, .next:hover, .close:hover {
     background: rgba(255,255,255,0.2);
   }
-  /* 갤러리 END */    
+  /* 갤러리 END */
+  
+  /* 오시는 길 START */
+  .map-header {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  .map-header .p6 {
+    display: block;
+    margin: 1em;
+    font-size: 0.7em;
+    color: #666
+  }
+
+  .map-header .p7 {
+    display: block;
+    margin: 0em 1.5em 1.5em 1.5em; 
+    font-size: 1.2em;
+    color: #333
+  } 
+
+  .map-body {
+    gap: 0.5rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .map-bottom {
+    text-align: left;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  .map-bottom p {
+    margin-bottom: 1.3em;
+  }
+
+  .map-bottom .span4 {
+    display: block;
+    margin-top: 0.5em;
+  }
+
+  .map-bottom .title {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    font-size: 0.75em;
+  }
+
+  .map-bottom .contents {
+    margin-left: 1em;
+    font-size: 0.65em;
+  }
+
+  .map-bottom .contents-sub {
+    margin-left: 0.85em;
+    color: #777;
+    font-size: 0.55em;
+  }
+  /* 오시는 길 END */  
 }
 
 /* 모바일 환경 가로 모드 */
@@ -652,36 +768,6 @@ section {
 
 .account-card button:hover {
   background: #8e4545;
-}
-
-.map {
-  text-align: center;
-  margin: 3rem 1rem;
-}
-
-.map h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1.2rem;
-  color: #b05a5a; /* 포인트 컬러 */
-}
-
-.map img {
-  width: 100%;         /* 화면 너비 꽉 차게 */
-  max-width: 900px;    /* 큰 화면에서도 넉넉하게 */
-  border-radius: 1rem;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.2); /* 그림자 살짝 강하게 */
-  border: 1px solid #f0e0d6;
-}
-
-.date {
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: #b48a78;
-}
-
-.location {
-  margin-top: 5px;
-  font-size: 1.1rem;
 }
 
 footer {
