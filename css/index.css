@@ -671,19 +671,19 @@
 
   .map-bottom .title {
     font-weight: bold;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.7em;
     font-size: 0.9em;
   }
 
   .map-bottom .contents {
-    margin-left: 1em;
-    font-size: 0.78em;
+    margin-left: 0.7em;
+    font-size: 0.77em;
   }
 
   .map-bottom .contents-sub {
-    margin-left: 1em;
+    margin-left: 0.7em;
     color: #999;
-    font-size: 0.75em;
+    font-size: 0.72em;
   }
 
 
@@ -693,7 +693,7 @@
 
   .p8 .contents {
     float: left;
-    width: 85%;
+    width: 80%;
     box-sizing: border-box;
     display: block; 
   }
