@@ -69,25 +69,38 @@ $(document).ready(function() {
     $('.cont').hide();
   };
 
-  // 최초 실행
+  // 카카오맵 하위 구성요소(테이블) 제거
   hideKakaoElements();
 
-  // 이후에도 계속 감시 (최대 5초 동안)
+  // dom ready 이후에도 계속 감시 (0.1초 간격)
   let count = 0;
 
   const interval = setInterval(function() {
     hideKakaoElements();
     count++;
-
+    // 10초 이후에 interval 이벤트 STOP
     if (count > 10) clearInterval(interval);
   }, 100);
+
+  // 계좌이체 신랑측/신부측 토글 활성화
+  $('.groom-account').show();
+  $('.bride-account').hide();
+
+  $('#toggleSide').on('change', function() {
+    if ($(this).is(':checked')) {
+      $('.groom-account').fadeOut(200, function() {
+        $('.bride-account').fadeIn(200);
+      });
+    } else {
+      $('.bride-account').fadeOut(200, function() {
+        $('.groom-account').fadeIn(200);
+      });
+    }
+  });
 });
 
-
-
-
-
-function fn_copyAccount(account) {
+// 텍스트 복사 기능
+function fn_copyText(account) {
   navigator.clipboard.writeText(account).then(() => {
   });
 }
