@@ -65,6 +65,25 @@
   }
   /* 메인 END */
 
+  /* 인사말 START */
+  .greeting-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #d48f4e;
+    letter-spacing: 1rem; /* 글자 간격 */
+    line-height: 10rem;
+  }
+
+  .greeting-contents {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.9rem;
+    color: #555;
+    letter-spacing: 0.2rem; /* 글자 간격 */
+    line-height: 4rem;
+  }
+  /* 인사말 END */
+
   /* 캘린더 START */
   .calendar-header {
     display: flex;
@@ -342,6 +361,16 @@
     box-sizing: border-box;
   }
 
+  .p9 {
+    overflow: hidden;
+  }
+
+  .p9 .contents {
+    float: left;
+    width: 15.5%;
+    box-sizing: border-box;
+  }  
+
   .map-bottom button {
     float: left;
     margin-top: 0.25rem;
@@ -421,6 +450,25 @@
     font-family: 'Noto Sans KR', sans-serif;
   }
   /* 메인 END */
+
+  /* 인사말 START */
+  .greeting-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: #d48f4e;
+    letter-spacing: 0.35rem; /* 글자 간격 */
+    line-height: 4rem;
+  }
+
+  .greeting-contents {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 0.9rem;
+    color: #555;
+    letter-spacing: 0.2rem; /* 글자 간격 */
+    line-height: 1.8rem;
+  }
+  /* 인사말 END */
 
   /* 캘린더 START */
   .gallery-header {
@@ -700,6 +748,16 @@
     display: block; 
   }
 
+  .p9 {
+    overflow: hidden;
+  }
+
+  .p9 .contents {
+    float: left;
+    width: 25%;
+    box-sizing: border-box;
+  }    
+
   .map-bottom button {
     float: left;
     margin-top: 0.6%;
@@ -716,7 +774,7 @@
     background: #b15602;
     color: #999;
   }
-  /* 오시는 길 END */  
+  /* 오시는 길 END */
 }
 
 /* 모바일 환경 가로 모드 */
