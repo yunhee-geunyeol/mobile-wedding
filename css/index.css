@@ -374,16 +374,11 @@
   }
 
   .map-bottom img {
-    width: 1.8em;
-    height: 1.8em;
+    width: 1.8rem;
+    height: 1.8rem;
     vertical-align: middle;
     cursor: pointer;
   }
-
-  .map-bottom button:hover {
-    background: #b15602;
-    color: #999;
-  }  
   /* 오시는 길 END */
 
   /* 계좌번호 START */
@@ -856,6 +851,10 @@
     margin-top: 0.5em;
   }
 
+  .map-bottom .span4:last-of-type {
+    display: inline-block;
+  }  
+
   .map-bottom .title {
     font-weight: bold;
     margin-left: 0.2em;
@@ -874,16 +873,13 @@
     font-size: 0.72em;
   }
 
-
   .p8 {
     overflow: hidden;
   }
 
   .p8 .contents {
-    float: left;
-    width: 81%;
+    width: 45%;
     box-sizing: border-box;
-    display: block; 
   }
 
   .p9 {
@@ -891,26 +887,15 @@
   }
 
   .p9 .contents {
-    float: left;
     width: 25%;
     box-sizing: border-box;
   }    
 
-  .map-bottom button {
-    float: left;
-    margin-top: 0.6%;
-    padding: 0.3rem 0.6rem;
-    background: #d48f4e;
-    color: white;
-    border: none;
-    border-radius: 0.8rem;
+  .map-bottom img {
+    width: 1.8rem;
+    height: 1.8rem;
+    vertical-align: middle;
     cursor: pointer;
-    font-size: 0.8em;
-  }
-
-  .map-bottom button:hover {
-    background: #b15602;
-    color: #999;
   }
   /* 오시는 길 END */
 
