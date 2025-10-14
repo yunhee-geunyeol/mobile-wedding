@@ -356,8 +356,7 @@
   }
 
   .p8 .contents {
-    float: left;
-    width: 54%;
+    width: 40%;
     box-sizing: border-box;
   }
 
@@ -369,16 +368,12 @@
     float: left;
     width: 15.5%;
     box-sizing: border-box;
-  }  
+  }
 
-  .map-bottom button {
-    float: left;
-    margin-top: 0.25rem;
-    padding: 0.5rem 1rem;
-    background: #d48f4e;
-    color: white;
-    border: none;
-    border-radius: 0.5rem;
+  .map-bottom img {
+    width: 1.8em;
+    height: 1.8em;
+    margin-top: 0.5em;
     cursor: pointer;
   }
 
